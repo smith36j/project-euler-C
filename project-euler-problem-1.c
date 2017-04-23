@@ -1,5 +1,5 @@
 //
-//  main.c
+//  project-euler-problem-1.c
 //  Project-Euler-C
 //
 // Problem 1: Find the sum of all the multiples of 3 and 5 below 1000
