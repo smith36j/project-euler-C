@@ -28,6 +28,15 @@
 // Note: changed to start at p = sqrt(x) + 1 -- resolves previous issues
 // Now runs on 18 digit numbers in about 15 seconds
 
+//  NOTICED A MISTAKE IN THE CODE!
+/* This program won't find the LARGEST prime factor of a number if that factor is larger than sqrt(x) + 1
+ For example, on the input 55, the program returns the result 5 instead of 11 because sqrt(55) +1 ~ 8
+ 
+ A possible solution would be to take x, find p that is prime and less than sqrt(x)+1, then to consider x/p and find the prime factor that is less than sprt(x/p)  +1 and compare it to p ... but when will we know that it's done...??
+ This would still fail for 452 = 2 * 2 * 113
+ */
+//
+
 #include <stdio.h>
 #include <math.h> // for square roots
 
